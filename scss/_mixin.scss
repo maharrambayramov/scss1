@@ -1,0 +1,38 @@
+@mixin flexBox ($direction, $content){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    flex-wrap: wrap;
+}
+@mixin size{
+    width: 30%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 30px 15px 0;
+    background-color: #f1f6fb;
+}
+
+@mixin imgSize{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@mixin divText($textColor, $textSize){
+    color: $textColor;
+    font-size: $textSize;
+}
+
+@mixin iconTexts($color){
+    width: 100%;
+    color: $color;
+    padding: 10px;
+}
+@mixin header{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 10px;
+}
